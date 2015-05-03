@@ -14,8 +14,10 @@
 /***       Debug        ***/
 //#define MESH_DEBUG_MINIMAL /** Uncomment for the Master Node to print out address assignments as they are assigned */
 
+#define MESH_DEBUG         /** Uncomment to enable debug output to serial **/
+
 #if !defined(__linux)
-  #define MESH_DEBUG         /** Uncomment to enable debug output to serial **/
+  #define MESH_NOMASTER
 #endif
 /**************************/
 
